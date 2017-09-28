@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+ <title>Shipping details</title>
+<head>
+
+
+</head>
+<body>
+
+
+<div>
+    
+
+</div>
+<form action="/updateTransaction/<%= Customer._id %>" method="post">
+    From:<input type="text" name="fromLoc" value="<%= Customer.fromLoc %>"><br>
+    Destination:<input type="text" name="toLoc" value="<%= Customer.toLoc %>"><br>
+    Pick up Date:<input type="text" name="pickDate" value="<%= Customer.pickDate %>"><br>
+    Drop Date:<input type="text" name="dropDate" value="<%= Customer.dropDate %>"><br>
+    Budget:<input type="text" name="budget" value="<%= Customer.budget %>"><br>
+    Current Status:<input type="text" name="status" value="<%= Customer.status %>"><br><br>
+    <button type="submit" >Update</button>
+
+
+</form>
+
+
+</div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+ <title>Service provider</title>
+<head>
+
+
+</head>
+<body>
+
+
+<div>
+    Name:<p><%= provider.name %></p>
+    Email No: <p><%= provider.email %></p>
+    Mobile No:<p><%= provider.mobileNo %></p>
+
+</div>
+<form action="/addService" method="post">
+    From:<input type="text" name="fromLoc"><br>
+    Destination:<input type="text" name="toLoc"><br>
+    Pick up Date:<input type="text" name="pickDate"><br>
+    Drop Date:<input type="text" name="dropDate"><br>
+    Received Amount:<input type="text" name="amountReceived" value=0><br>
+    Current Status:<input type="text" name="status" value="not delivered"><br><br>
+    <button type="submit" >Submit</button>
+
+
+</form>
+
+<div>
+    <ul>
+            <% provider.services.forEach( function( ser ){ %>
+                <li> <%= ser.toLoc %> <a href="/singleService/<%= ser._id %>">Edit</li>
+                <% }); %>                
+        
+   </ul>
+</div>
+
+    
+    
+
+  
+
+
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+ <title>Service provider</title>
+<head>
+
+
+</head>
+<body>
+
+
+<div>
+    
+
+</div>
+<form action="/updateService/<%= service._id %>" method="post">
+    From:<input type="text" name="fromLoc" value="<%= service.fromLoc %>"><br>
+    Destination:<input type="text" name="toLoc" value="<%= service.toLoc %>"><br>
+    Pick up Date:<input type="text" name="pickDate" value="<%= service.pickDate %>"><br>
+    Drop Date:<input type="text" name="dropDate" value="<%= service.dropDate %>"><br>
+    Received Amount:<input type="text" name="amountReceived" value="<%= service.amountReceived %>"><br>
+    Current Status:<input type="text" name="status" value="<%= service.status %>"><br><br>
+    <button type="submit" >Update</button>
+
+
+</form>
+
+
+</div>
+
+    
+    
+
+  
+
+
+
+
+</body>
+</html>
+
+

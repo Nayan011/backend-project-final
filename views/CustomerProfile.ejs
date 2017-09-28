@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+ <title>Customer Details</title>
+<head>
+
+
+</head>
+<body>
+
+
+<div>
+    Name:<p><%= customer.name %></p>
+    Email No: <p><%= customer.email %></p>
+    Mobile No:<p><%= customer.mobileNo %></p>
+
+</div>
+<form action="/addTransaction" method="post">
+    From:<input type="text" name="fromLoc"><br>
+    Destination:<input type="text" name="toLoc"><br>
+    Pick up Date:<input type="text" name="pickDate"><br>
+    Drop Date:<input type="text" name="dropDate"><br>
+   Budget:<input type="text" name="budget" value=0><br>
+    Current Status:<input type="text" name="status" value="not delivered"><br><br>
+    <button type="submit" >Submit</button>
+
+
+</form>
+
+
+
+</div>
+
+    
+    
+
+  
+
+
+
+
+</body>
+</html>
+
+

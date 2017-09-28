@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+ <title>Add Transaction</title>
+<head>
+
+
+</head>
+<body>
+
+
+<div>
+    
+
+</div>
+<form action="/addTransaction/<%= tran._id %>" method="post">
+    From:<input type="text" name="fromLoc" value="<%= tran.fromLoc %>"><br>
+    Destination:<input type="text" name="toLoc" value="<%= tran.toLoc %>"><br>
+    Pick up Date:<input type="text" name="pickDate" value="<%= tran.pickDate %>"><br>
+    Drop Date:<input type="text" name="dropDate" value="<%= tran.dropDate %>"><br>
+    Budget:<input type="text" name="budget" value="<%= tran.budget %>"><br>
+    Current Status:<input type="text" name="status" value="<%= tran.status %>"><br><br>
+    <button type="submit" >Update</button>
+
+
+</form>
+
+
+</div>
+
+    
+    
+
+  
+
+
+
+
+</body>
+</html>
+
+
